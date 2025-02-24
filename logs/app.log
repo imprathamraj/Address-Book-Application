@@ -1,0 +1,376 @@
+2025-02-24T15:21:39.381+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] c.b.a.AddressBookApplication             : Starting AddressBookApplication using Java 21.0.5 with PID 22012 (C:\Lab\Address-Book-Application\target\classes started by HP in C:\Lab\Address-Book-Application)
+2025-02-24T15:21:39.385+05:30 DEBUG 22012 --- [Address-Book-Application] [restartedMain] c.b.a.AddressBookApplication             : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-24T15:21:39.387+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] c.b.a.AddressBookApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-02-24T15:21:39.449+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-24T15:21:39.449+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-24T15:21:40.324+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-24T15:21:40.420+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interface.
+2025-02-24T15:21:41.139+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-24T15:21:41.156+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-24T15:21:41.157+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-24T15:21:41.210+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-24T15:21:41.210+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1760 ms
+2025-02-24T15:21:41.440+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-24T15:21:41.562+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-24T15:21:41.623+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-24T15:21:42.001+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-24T15:21:42.063+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-24T15:21:42.307+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/testdatabase user=SA
+2025-02-24T15:21:42.309+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-24T15:21:42.333+05:30  WARN 22012 --- [Address-Book-Application] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-24T15:21:42.352+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-24T15:21:43.046+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-24T15:21:43.083+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24T15:21:43.105+05:30  WARN 22012 --- [Address-Book-Application] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'addressBookController' defined in file [C:\Lab\Address-Book-Application\target\classes\com\bridgelabz\addressbookapplication\controller\AddressBookController.class]: null
+2025-02-24T15:21:43.105+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24T15:21:43.110+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-24T15:21:43.133+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-24T15:21:43.136+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-02-24T15:21:43.157+05:30  INFO 22012 --- [Address-Book-Application] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-24T15:21:43.185+05:30 ERROR 22012 --- [Address-Book-Application] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'addressBookController' defined in file [C:\Lab\Address-Book-Application\target\classes\com\bridgelabz\addressbookapplication\controller\AddressBookController.class]: null
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1343) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1228) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.3.jar:3.4.3]
+	at com.bridgelabz.addressbookapplication.AddressBookApplication.main(AddressBookApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.3.jar:3.4.3]
+Caused by: java.lang.ExceptionInInitializerError: null
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method) ~[na:na]
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1160) ~[na:na]
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.ensureClassInitialized(MethodHandleAccessorFactory.java:300) ~[na:na]
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.newConstructorAccessor(MethodHandleAccessorFactory.java:103) ~[na:na]
+	at java.base/jdk.internal.reflect.ReflectionFactory.newConstructorAccessor(ReflectionFactory.java:200) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.acquireConstructorAccessor(Constructor.java:549) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:196) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 22 common frames omitted
+Caused by: java.lang.ClassCastException: class ch.qos.logback.classic.Logger cannot be cast to class java.util.logging.Logger (ch.qos.logback.classic.Logger is in unnamed module of loader 'app'; java.util.logging.Logger is in module java.logging of loader 'bootstrap')
+	at com.bridgelabz.addressbookapplication.controller.AddressBookController.<clinit>(AddressBookController.java:18) ~[classes/:na]
+	... 33 common frames omitted
+
+2025-02-24T15:22:33.564+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] c.b.a.AddressBookApplication             : Starting AddressBookApplication using Java 21.0.5 with PID 396 (C:\Lab\Address-Book-Application\target\classes started by HP in C:\Lab\Address-Book-Application)
+2025-02-24T15:22:33.567+05:30 DEBUG 396 --- [Address-Book-Application] [restartedMain] c.b.a.AddressBookApplication             : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-24T15:22:33.568+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] c.b.a.AddressBookApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-02-24T15:22:33.637+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-24T15:22:33.637+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-24T15:22:34.428+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-24T15:22:34.508+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interface.
+2025-02-24T15:22:35.131+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-24T15:22:35.148+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-24T15:22:35.149+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-24T15:22:35.186+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-24T15:22:35.186+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1549 ms
+2025-02-24T15:22:35.368+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-24T15:22:35.434+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-24T15:22:35.475+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-24T15:22:35.798+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-24T15:22:35.831+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-24T15:22:36.028+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/testdatabase user=SA
+2025-02-24T15:22:36.031+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-24T15:22:36.056+05:30  WARN 396 --- [Address-Book-Application] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-24T15:22:36.074+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-24T15:22:36.744+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-24T15:22:36.787+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24T15:22:36.799+05:30  WARN 396 --- [Address-Book-Application] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'addressBookController' defined in file [C:\Lab\Address-Book-Application\target\classes\com\bridgelabz\addressbookapplication\controller\AddressBookController.class]: null
+2025-02-24T15:22:36.800+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24T15:22:36.808+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-24T15:22:36.829+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-24T15:22:36.831+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-02-24T15:22:36.844+05:30  INFO 396 --- [Address-Book-Application] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-24T15:22:36.874+05:30 ERROR 396 --- [Address-Book-Application] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'addressBookController' defined in file [C:\Lab\Address-Book-Application\target\classes\com\bridgelabz\addressbookapplication\controller\AddressBookController.class]: null
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1343) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1228) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.3.jar:3.4.3]
+	at com.bridgelabz.addressbookapplication.AddressBookApplication.main(AddressBookApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.3.jar:3.4.3]
+Caused by: java.lang.ExceptionInInitializerError: null
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method) ~[na:na]
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1160) ~[na:na]
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.ensureClassInitialized(MethodHandleAccessorFactory.java:300) ~[na:na]
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.newConstructorAccessor(MethodHandleAccessorFactory.java:103) ~[na:na]
+	at java.base/jdk.internal.reflect.ReflectionFactory.newConstructorAccessor(ReflectionFactory.java:200) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.acquireConstructorAccessor(Constructor.java:549) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:196) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 22 common frames omitted
+Caused by: java.lang.ClassCastException: class ch.qos.logback.classic.Logger cannot be cast to class java.util.logging.Logger (ch.qos.logback.classic.Logger is in unnamed module of loader 'app'; java.util.logging.Logger is in module java.logging of loader 'bootstrap')
+	at com.bridgelabz.addressbookapplication.controller.AddressBookController.<clinit>(AddressBookController.java:18) ~[classes/:na]
+	... 33 common frames omitted
+
+2025-02-24T15:23:05.677+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] c.b.a.AddressBookApplication             : Starting AddressBookApplication using Java 21.0.5 with PID 16264 (C:\Lab\Address-Book-Application\target\classes started by HP in C:\Lab\Address-Book-Application)
+2025-02-24T15:23:05.680+05:30 DEBUG 16264 --- [Address-Book-Application] [restartedMain] c.b.a.AddressBookApplication             : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-24T15:23:05.681+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] c.b.a.AddressBookApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-02-24T15:23:05.743+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-24T15:23:05.743+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-24T15:23:06.805+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-24T15:23:06.916+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interface.
+2025-02-24T15:23:07.877+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-24T15:23:07.899+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-24T15:23:07.899+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-24T15:23:07.947+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-24T15:23:07.948+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2204 ms
+2025-02-24T15:23:08.139+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-24T15:23:08.241+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-24T15:23:08.297+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-24T15:23:08.734+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-24T15:23:08.770+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-24T15:23:09.023+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/testdatabase user=SA
+2025-02-24T15:23:09.025+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-24T15:23:09.063+05:30  WARN 16264 --- [Address-Book-Application] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-24T15:23:09.096+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-24T15:23:10.453+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-24T15:23:10.501+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24T15:23:10.516+05:30  WARN 16264 --- [Address-Book-Application] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'addressBookController' defined in file [C:\Lab\Address-Book-Application\target\classes\com\bridgelabz\addressbookapplication\controller\AddressBookController.class]: null
+2025-02-24T15:23:10.517+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24T15:23:10.522+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-24T15:23:10.534+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-24T15:23:10.543+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-02-24T15:23:10.562+05:30  INFO 16264 --- [Address-Book-Application] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-24T15:23:10.594+05:30 ERROR 16264 --- [Address-Book-Application] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'addressBookController' defined in file [C:\Lab\Address-Book-Application\target\classes\com\bridgelabz\addressbookapplication\controller\AddressBookController.class]: null
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1343) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1228) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.3.jar:3.4.3]
+	at com.bridgelabz.addressbookapplication.AddressBookApplication.main(AddressBookApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.3.jar:3.4.3]
+Caused by: java.lang.ExceptionInInitializerError: null
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method) ~[na:na]
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1160) ~[na:na]
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.ensureClassInitialized(MethodHandleAccessorFactory.java:300) ~[na:na]
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.newConstructorAccessor(MethodHandleAccessorFactory.java:103) ~[na:na]
+	at java.base/jdk.internal.reflect.ReflectionFactory.newConstructorAccessor(ReflectionFactory.java:200) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.acquireConstructorAccessor(Constructor.java:549) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:196) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 22 common frames omitted
+Caused by: java.lang.ClassCastException: class ch.qos.logback.classic.Logger cannot be cast to class java.util.logging.Logger (ch.qos.logback.classic.Logger is in unnamed module of loader 'app'; java.util.logging.Logger is in module java.logging of loader 'bootstrap')
+	at com.bridgelabz.addressbookapplication.controller.AddressBookController.<clinit>(AddressBookController.java:17) ~[classes/:na]
+	... 33 common frames omitted
+
+2025-02-24T15:25:44.292+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] c.b.a.AddressBookApplication             : Starting AddressBookApplication using Java 21.0.5 with PID 20460 (C:\Lab\Address-Book-Application\target\classes started by HP in C:\Lab\Address-Book-Application)
+2025-02-24T15:25:44.296+05:30 DEBUG 20460 --- [Address-Book-Application] [restartedMain] c.b.a.AddressBookApplication             : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-24T15:25:44.298+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] c.b.a.AddressBookApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-02-24T15:25:44.440+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-24T15:25:44.441+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-24T15:25:46.079+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-24T15:25:46.199+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 1 JPA repository interface.
+2025-02-24T15:25:47.369+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-24T15:25:47.398+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-24T15:25:47.399+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-24T15:25:47.513+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-24T15:25:47.514+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3071 ms
+2025-02-24T15:25:47.887+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-24T15:25:48.015+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-24T15:25:48.100+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-24T15:25:48.915+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-24T15:25:48.997+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-24T15:25:49.460+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/testdatabase user=SA
+2025-02-24T15:25:49.464+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-24T15:25:49.522+05:30  WARN 20460 --- [Address-Book-Application] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-24T15:25:49.575+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-24T15:25:50.756+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-24T15:25:50.808+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24T15:25:50.827+05:30  WARN 20460 --- [Address-Book-Application] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'addressBookController' defined in file [C:\Lab\Address-Book-Application\target\classes\com\bridgelabz\addressbookapplication\controller\AddressBookController.class]: null
+2025-02-24T15:25:50.827+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24T15:25:50.835+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-24T15:25:50.849+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-24T15:25:50.852+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-02-24T15:25:50.868+05:30  INFO 20460 --- [Address-Book-Application] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-24T15:25:50.909+05:30 ERROR 20460 --- [Address-Book-Application] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'addressBookController' defined in file [C:\Lab\Address-Book-Application\target\classes\com\bridgelabz\addressbookapplication\controller\AddressBookController.class]: null
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1343) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1228) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.3.jar:3.4.3]
+	at com.bridgelabz.addressbookapplication.AddressBookApplication.main(AddressBookApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.3.jar:3.4.3]
+Caused by: java.lang.ExceptionInInitializerError: null
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method) ~[na:na]
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1160) ~[na:na]
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.ensureClassInitialized(MethodHandleAccessorFactory.java:300) ~[na:na]
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.newConstructorAccessor(MethodHandleAccessorFactory.java:103) ~[na:na]
+	at java.base/jdk.internal.reflect.ReflectionFactory.newConstructorAccessor(ReflectionFactory.java:200) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.acquireConstructorAccessor(Constructor.java:549) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:196) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 22 common frames omitted
+Caused by: java.lang.ClassCastException: class ch.qos.logback.classic.Logger cannot be cast to class java.util.logging.Logger (ch.qos.logback.classic.Logger is in unnamed module of loader 'app'; java.util.logging.Logger is in module java.logging of loader 'bootstrap')
+	at com.bridgelabz.addressbookapplication.controller.AddressBookController.<clinit>(AddressBookController.java:17) ~[classes/:na]
+	... 33 common frames omitted
+
+2025-02-24T15:27:34.118+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] c.b.a.AddressBookApplication             : Starting AddressBookApplication using Java 21.0.5 with PID 22508 (C:\Lab\Address-Book-Application\target\classes started by HP in C:\Lab\Address-Book-Application)
+2025-02-24T15:27:34.121+05:30 DEBUG 22508 --- [Address-Book-Application] [restartedMain] c.b.a.AddressBookApplication             : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-24T15:27:34.122+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] c.b.a.AddressBookApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-02-24T15:27:34.224+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-24T15:27:34.225+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-24T15:27:35.326+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-24T15:27:35.412+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interface.
+2025-02-24T15:27:36.203+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-24T15:27:36.228+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-24T15:27:36.229+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-24T15:27:36.283+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-24T15:27:36.284+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2058 ms
+2025-02-24T15:27:36.568+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-24T15:27:36.629+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-24T15:27:36.658+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-24T15:27:36.998+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-24T15:27:37.026+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-24T15:27:37.254+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/testdatabase user=SA
+2025-02-24T15:27:37.284+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-24T15:27:37.305+05:30  WARN 22508 --- [Address-Book-Application] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-24T15:27:37.326+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-24T15:27:38.017+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-24T15:27:38.050+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24T15:27:38.441+05:30  WARN 22508 --- [Address-Book-Application] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-24T15:27:38.757+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./data/testdatabase'
+2025-02-24T15:27:38.827+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-24T15:27:38.872+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-24T15:27:38.883+05:30  INFO 22508 --- [Address-Book-Application] [restartedMain] c.b.a.AddressBookApplication             : Started AddressBookApplication in 5.394 seconds (process running for 6.101)
+2025-02-24T15:28:27.219+05:30  INFO 22508 --- [Address-Book-Application] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-24T15:28:27.220+05:30  INFO 22508 --- [Address-Book-Application] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-24T15:28:27.221+05:30  INFO 22508 --- [Address-Book-Application] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-24T15:28:55.037+05:30  INFO 22508 --- [Address-Book-Application] [http-nio-8080-exec-4] c.b.a.controller.AddressBookController   : All address endpoint called 
+2025-02-24T15:29:02.618+05:30  INFO 22508 --- [Address-Book-Application] [http-nio-8080-exec-5] c.b.a.controller.AddressBookController   : All address endpoint called 
+2025-02-24T15:32:46.905+05:30  INFO 22508 --- [Address-Book-Application] [http-nio-8080-exec-9] c.b.a.controller.AddressBookController   : All address endpoint called 
+2025-02-24T15:32:55.222+05:30  INFO 22508 --- [Address-Book-Application] [http-nio-8080-exec-10] c.b.a.controller.AddressBookController   : By id address endpoint called 
+2025-02-24T15:33:28.118+05:30  INFO 22508 --- [Address-Book-Application] [http-nio-8080-exec-1] c.b.a.controller.AddressBookController   : By id address endpoint called 
+2025-02-24T15:33:44.504+05:30  INFO 22508 --- [Address-Book-Application] [http-nio-8080-exec-2] c.b.a.controller.AddressBookController   : By id address endpoint called 
+2025-02-24T15:33:47.916+05:30  INFO 22508 --- [Address-Book-Application] [http-nio-8080-exec-3] c.b.a.controller.AddressBookController   : By id address endpoint called 
+2025-02-24T15:34:35.532+05:30  INFO 22508 --- [Address-Book-Application] [http-nio-8080-exec-4] c.b.a.controller.AddressBookController   : Update address endpoint called
+2025-02-24T15:34:45.944+05:30  WARN 22508 --- [Address-Book-Application] [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+2025-02-24T15:34:51.229+05:30  INFO 22508 --- [Address-Book-Application] [http-nio-8080-exec-7] c.b.a.controller.AddressBookController   : All address endpoint called 
+2025-02-24T15:35:39.104+05:30  INFO 22508 --- [Address-Book-Application] [http-nio-8080-exec-8] c.b.a.controller.AddressBookController   : Create address endpoint called
+2025-02-24T15:35:55.599+05:30  WARN 22508 --- [Address-Book-Application] [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-02-24T15:36:06.516+05:30  INFO 22508 --- [Address-Book-Application] [http-nio-8080-exec-10] c.b.a.controller.AddressBookController   : Delete address endpoint called
+2025-02-24T15:36:18.215+05:30  INFO 22508 --- [Address-Book-Application] [http-nio-8080-exec-1] c.b.a.controller.AddressBookController   : All address endpoint called 
