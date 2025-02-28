@@ -374,3 +374,8 @@ Caused by: java.lang.ClassCastException: class ch.qos.logback.classic.Logger can
 2025-02-24T15:35:55.599+05:30  WARN 22508 --- [Address-Book-Application] [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
 2025-02-24T15:36:06.516+05:30  INFO 22508 --- [Address-Book-Application] [http-nio-8080-exec-10] c.b.a.controller.AddressBookController   : Delete address endpoint called
 2025-02-24T15:36:18.215+05:30  INFO 22508 --- [Address-Book-Application] [http-nio-8080-exec-1] c.b.a.controller.AddressBookController   : All address endpoint called 
+2025-02-24T15:39:27.355+05:30  INFO 22508 --- [Address-Book-Application] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-24T15:39:27.371+05:30  INFO 22508 --- [Address-Book-Application] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-24T15:39:27.378+05:30  INFO 22508 --- [Address-Book-Application] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24T15:39:27.389+05:30  INFO 22508 --- [Address-Book-Application] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-24T15:39:27.392+05:30  INFO 22508 --- [Address-Book-Application] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
