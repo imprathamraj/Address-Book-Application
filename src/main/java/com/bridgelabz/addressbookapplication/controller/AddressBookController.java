@@ -1,8 +1,13 @@
 package com.bridgelabz.addressbookapplication.controller;
 
+import com.bridgelabz.addressbookapplication.AddressBookApplication;
+import com.bridgelabz.addressbookapplication.dto.AddressBookDTO;
+import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
@@ -33,17 +38,24 @@ public class AddressBookController {
         return addressBookService.getAddressBookById(id);
     }
 
+    // To create a new AddressBook
     @PostMapping("/create")
-    public AddressBook addAddressBook(@RequestBody AddressBook addressBook){
+    public ResponseEntity<?> addAddressBook(@Valid @RequestBody AddressBookDTO addressBookDTO){
         logger.info("Create address endpoint called");
-        return addressBookService.addAddressBook(addressBook);
+        return ResponseEntity.ok(addressBookService.addAddressBook(addressBookDTO));
     }
 
     //Update the address book
     @PutMapping("/update/{id}")
-    public AddressBook updateAddressBook(@PathVariable Long id, @RequestBody AddressBook addressBook){
+    public ResponseEntity<?> updateAddressBook(@PathVariable Long id, @Valid @RequestBody AddressBookDTO addressBookDTO){
         logger.info("Update address endpoint called");
-        return addressBookService.updateAddressBook(id,addressBook);
+        AddressBook updatedAddressBook = addressBookService.updateAddressBook(id, addressBookDTO);
+        if (updatedAddressBook != null) {
+            return ResponseEntity.ok(updatedAddressBook);
+        } else {
+            logger.warn("No address book found with ID: {}", id);
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+        }
     }
 
     //Delete the address book
